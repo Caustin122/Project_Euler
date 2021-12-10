@@ -1,0 +1,9 @@
+length = int(input("Enter the length of the number you want to find:"))
+fibonacci = [1,1]
+total = 0
+while True:
+    fibonacci.append(fibonacci[-1] + fibonacci[-2])
+    if len(str(fibonacci[-1])) == length:
+        print("The {} number in the fibonacci sequence is the first to contain {} digits".format(len(fibonacci),length))
+        print("The number is {}".format(fibonacci[-1]))
+        break
